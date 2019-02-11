@@ -5,40 +5,12 @@
  */
 package Controller.Create.RelationToPerson;;
 
-import Conexion.Conexion;
-import Conexion.JdbConnection;
-import DAO.BlackBoxJpaController;
-import DAO.PersonaJpaController;
-import Entidades.BlackBox;
-import Entidades.Persona;
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextArea;
-import com.jfoenix.controls.JFXTextField;
-import com.jfoenix.controls.JFXToggleButton;
-import java.net.URL;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.time.ZonedDateTime;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
-import javax.persistence.EntityManagerFactory;
-import sun.util.calendar.Gregorian;
 import Conexion.Conexion;
 import Conexion.JdbConnection;
-import DAO.BlackBoxJpaController;
 import DAO.PersonaJpaController;
-import Entidades.BlackBox;
 import Entidades.Persona;
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXToggleButton;
 import java.net.URL;
@@ -56,7 +28,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.DatePicker;
 import javafx.scene.input.KeyCode;
 import javax.persistence.EntityManagerFactory;
-import sun.util.calendar.Gregorian;
 
 /**
  * FXML Controller class
