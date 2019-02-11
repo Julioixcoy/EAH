@@ -65,10 +65,12 @@ public class ReportsController implements Initializable {
 
     @FXML
     private void btnParents(ActionEvent event) {
+        report("src/Report/Parents.jasper");
     }
 
     @FXML
     private void btnFamily(ActionEvent event) {
+        report("src/Report/Family.jasper");
     }
     private void report(String path){
           

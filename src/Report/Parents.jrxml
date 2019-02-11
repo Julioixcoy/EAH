@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="01e301c2-d399-4cfb-b91a-08f231ae62bc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="73"/>
+	<queryString>
+		<![CDATA[SELECT
+     Persona.`nombre` AS Persona_nombre,
+     Persona.`apellido` AS Persona_apellido,
+     Persona.`age` AS Persona_age,
+     Persona.`wasBorn` AS Persona_wasBorn,
+     Persona.`etnia` AS Persona_etnia,
+     Parents.`idParents` AS Parents_idParents,
+     Parents.`dependency` AS Parents_dependency,
+     Parents.`isDependent` AS Parents_isDependent,
+     Parents.`isMom` AS Parents_isMom,
+     Parents.`isLives` AS Parents_isLives,
+     Parents.`isAlphabet` AS Parents_isAlphabet,
+     FamilyComplete.`FamilyCompleteID` AS FamilyComplete_FamilyCompleteID,
+     FamilyComplete.`Parents_idParents` AS FamilyComplete_Parents_idParents,
+     FamilyComplete.`Parents_Persona_idPersona` AS FamilyComplete_Parents_Persona_idPersona,
+     FamilyComplete.`Family_idFamily` AS FamilyComplete_Family_idFamily,
+     FamilyComplete.`codFamiliar` AS FamilyComplete_codFamiliar
+FROM
+     `Persona` Persona INNER JOIN `Parents` Parents ON Persona.`idPersona` = Parents.`Persona_idPersona`
+     INNER JOIN `FamilyComplete` FamilyComplete ON Parents.`idParents` = FamilyComplete.`Parents_idParents`
+     AND Parents.`Persona_idPersona` = FamilyComplete.`Parents_Persona_idPersona`]]>
+	</queryString>
+	<field name="Persona_nombre" class="java.lang.String"/>
+	<field name="Persona_apellido" class="java.lang.String"/>
+	<field name="Persona_age" class="java.lang.Integer"/>
+	<field name="Persona_wasBorn" class="java.sql.Date"/>
+	<field name="Persona_etnia" class="java.lang.String"/>
+	<field name="Parents_idParents" class="java.lang.Integer"/>
+	<field name="Parents_dependency" class="java.lang.String"/>
+	<field name="Parents_isDependent" class="java.lang.Boolean"/>
+	<field name="Parents_isMom" class="java.lang.Boolean"/>
+	<field name="Parents_isLives" class="java.lang.Boolean"/>
+	<field name="Parents_isAlphabet" class="java.lang.Boolean"/>
+	<field name="FamilyComplete_FamilyCompleteID" class="java.lang.Integer"/>
+	<field name="FamilyComplete_Parents_idParents" class="java.lang.Integer"/>
+	<field name="FamilyComplete_Parents_Persona_idPersona" class="java.lang.Integer"/>
+	<field name="FamilyComplete_Family_idFamily" class="java.lang.Integer"/>
+	<field name="FamilyComplete_codFamiliar" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="455" y="59" width="100" height="20" uuid="dfb211a0-74bd-4dbf-b94d-fe4b50468ee6"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="34" width="402" height="45" uuid="b92d0888-4725-4be8-aaf3-2fb8080c58e1"/>
+				<textElement>
+					<font size="34"/>
+				</textElement>
+				<text><![CDATA[Listado de Padres]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="0" width="100" height="20" uuid="caf83372-8504-4b34-bb0b-3f845e99f215"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="0" width="100" height="20" uuid="aa2fef86-1ed0-43f3-9b05-4df191699f7e"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="218" y="0" width="100" height="20" uuid="52ecb723-326f-4d86-981b-3672c5b63ae6"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Edad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="421" y="0" width="100" height="20" uuid="367e5691-c6a4-4a0b-b98a-295d9c7373bf"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Vive]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="0" width="103" height="20" uuid="d0cc35dd-9c9e-4b4c-888c-e139f2998e85"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[F. Nacimiento]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="0" width="100" height="20" uuid="cb9c3fd6-f8c9-4802-a650-f1484fff277b"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Persona_nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="0" width="100" height="20" uuid="3c753282-0c4b-4afe-ad43-4c4521998000"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Persona_apellido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="0" width="100" height="20" uuid="852f58dd-66ae-497b-9376-0f01069d16ba"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Persona_age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="421" y="0" width="100" height="20" uuid="01ba6965-19d3-429a-a2fa-854f164fba88"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Parents_isLives}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="318" y="0" width="103" height="20" uuid="3486cd9d-d464-4a8c-9632-3888fbd9f498"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Persona_wasBorn}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="237" y="18" width="80" height="20" uuid="65fdf5c5-8632-4175-9a80-82ac47fd35ed"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="317" y="18" width="40" height="20" uuid="8dd908b7-75d5-4ce2-9883-21b2efc7f148"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

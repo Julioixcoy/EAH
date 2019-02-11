@@ -5,6 +5,7 @@
  */
 package classGeneric;
 
+import Conexion.JdbConnection;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,7 +18,7 @@ import java.sql.ResultSet;
 public class Procedimientos {
     public void callLogin(){
           try {
-            Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","password");
+            Connection c = JdbConnection.getConection();
             CallableStatement miProcedure = c.prepareCall("{call login}");
             ResultSet rs = miProcedure.executeQuery();
             while (rs.next()) {
