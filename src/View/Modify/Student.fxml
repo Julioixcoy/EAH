@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="729.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.Modify.RelationToPerson.ModifyStudentController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="375.0" prefWidth="354.0">
+         <children>
+            <TableView fx:id="tablePerson" layoutX="14.0" layoutY="68.0" prefHeight="301.0" prefWidth="313.0">
+              <columns>
+                <TableColumn fx:id="codigo" prefWidth="75.0" text="Codigo" />
+                <TableColumn fx:id="nombre" prefWidth="209.0" text="Nombre" />
+              </columns>
+            </TableView>
+            <JFXTextField fx:id="txtBuscar" layoutX="14.0" layoutY="29.0" prefHeight="25.0" prefWidth="254.0" promptText="Buscar..." />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="368.0" layoutY="14.0" prefHeight="375.0" prefWidth="354.0">
+         <children>
+            <JFXTextField fx:id="txtDescripcion" layoutX="14.0" layoutY="21.0" promptText="Descripcion" />
+            <JFXTextField fx:id="txtTelefono" layoutX="185.0" layoutY="21.0" promptText="Telefono Personal..." />
+            <JFXComboBox fx:id="comboLive" layoutX="14.0" layoutY="70.0" prefHeight="25.0" prefWidth="155.0" promptText="Vive Con..." />
+            <JFXToggleButton fx:id="toggleRegular" layoutX="12.0" layoutY="159.0" text="Regular" />
+            <JFXToggleButton fx:id="toggleHuerfano" layoutX="185.0" layoutY="159.0" text="Huerfano" />
+            <JFXComboBox fx:id="comboGenero" layoutX="185.0" layoutY="70.0" prefHeight="25.0" prefWidth="155.0" promptText="Genero..." />
+            <DatePicker fx:id="dateInit" layoutX="84.0" layoutY="118.0" prefHeight="25.0" prefWidth="172.0" promptText="Fecha de Inicio..." />
+            <JFXComboBox fx:id="comboLevelAcademic" layoutX="12.0" layoutY="248.0" prefHeight="25.0" prefWidth="158.0" promptText="Nivel Academico..." />
+            <JFXTextField fx:id="txtYear" layoutX="179.0" layoutY="249.0" promptText="Anio..." />
+            <JFXTextField fx:id="txtSemester" layoutX="7.0" layoutY="291.0" promptText="Semestre..." />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnGuardar" buttonType="RAISED" contentDisplay="CENTER" layoutX="285.0" layoutY="398.0" onAction="#save" prefHeight="36.0" prefWidth="155.0" ripplerFill="#00000083" style="-fx-background-color: lightblue;" text="Guardar" wrapText="true" />
+   </children>
+</AnchorPane>

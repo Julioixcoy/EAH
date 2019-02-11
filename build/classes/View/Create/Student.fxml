@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Create.RelationToPerson.StudentController">
+   <children>
+      <Pane layoutX="14.0" prefHeight="328.0" prefWidth="337.0">
+         <children>
+            <TableView fx:id="tablePerson" layoutY="91.0" prefHeight="237.0" prefWidth="337.0">
+              <columns>
+                <TableColumn fx:id="codigo" prefWidth="70.0" text="Codigo" />
+                <TableColumn fx:id="nombre" prefWidth="204.0" text="Nombre" />
+                  <TableColumn fx:id="edad" prefWidth="62.0" text="Edad" />
+              </columns>
+            </TableView>
+            <JFXTextField fx:id="txtBucar" layoutX="7.0" layoutY="44.0" onAction="#txtBuscarActionfilter" prefHeight="23.0" prefWidth="221.0" promptText="Buscar..." />
+         </children>
+      </Pane>
+      <Pane layoutX="368.0" prefHeight="328.0" prefWidth="232.0">
+         <children>
+            <Label fx:id="lblNombre" layoutX="14.0" layoutY="70.0" prefHeight="29.0" prefWidth="183.0" />
+            <Label fx:id="lblCod" layoutX="14.0" layoutY="39.0" prefHeight="23.0" prefWidth="118.0" />
+            <Label fx:id="lblDate" layoutX="14.0" layoutY="110.0" prefHeight="23.0" prefWidth="161.0" />
+            <Separator layoutX="16.0" layoutY="143.0" prefWidth="200.0" style="-fx-border-color: grey;" />
+            <JFXComboBox fx:id="levelAcademic" layoutX="16.0" layoutY="165.0" prefHeight="25.0" prefWidth="200.0" promptText="Nivel Academico*..." />
+            <JFXTextField fx:id="year" layoutX="17.0" layoutY="221.0" prefHeight="23.0" prefWidth="200.0" promptText="anio" />
+            <JFXTextField fx:id="semester" layoutX="17.0" layoutY="276.0" prefHeight="23.0" prefWidth="200.0" promptText="Semestre..." />
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="15.0" prefWidth="99.0" text="Academicos" />
+         </children>
+      </Pane>
+      <Pane layoutX="600.0" prefHeight="421.0" prefWidth="221.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Otro" />
+            <Group layoutX="43.0" layoutY="99.0" />
+            <DatePicker fx:id="txtDateInit" layoutX="12.0" layoutY="228.0" promptText="Fecha de Inicio..." />
+            <JFXToggleButton fx:id="regularIO" layoutX="9.0" layoutY="41.0" prefHeight="58.0" prefWidth="170.0" style="-fx-background-color: #ADD8E6;" text="Regular">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXToggleButton>
+            <JFXToggleButton fx:id="toggleMasculino" layoutX="9.0" layoutY="111.0" prefHeight="58.0" prefWidth="170.0" style="-fx-background-color: #ADD8E6;" text="Masculino">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXToggleButton>
+            <JFXTextArea fx:id="txtDescripcion" layoutX="12.0" layoutY="289.0" prefHeight="104.0" prefWidth="197.0" />
+            <JFXComboBox fx:id="comboLivesWith" layoutX="9.0" layoutY="186.0" prefHeight="25.0" prefWidth="170.0" promptText="Vive Con...*" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnSave" layoutX="371.0" layoutY="357.0" onAction="#btnSave" prefHeight="29.0" prefWidth="170.0" style="-fx-background-color: #2E8B57;" text="Guardar" />
+   </children>
+</AnchorPane>

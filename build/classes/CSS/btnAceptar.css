@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.btnAceptar {
+    .button { 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 5;
+}
+/* Estilo cuando se posiciona el ratón sobre cualquier botón */
+/*.button:hover {
+    -fx-font-size: 16px; 
+}*/
+/* Estilo para botón con ID btnAceptar */
+.button:hover { 
+	-fx-font-size: 16px; 
+	-fx-background: rgba(0,0,0,0);
+	-fx-color: #3a7999;
+	-fx-box-shadow: inset 0 0 0 3px #3a7999;
+}
+}

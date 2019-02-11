@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Create.RelationToPerson.ParentController">
+   <children>
+      <TableView fx:id="tablePerson" layoutX="14.0" layoutY="56.0" prefHeight="242.0" prefWidth="381.0">
+        <columns>
+          <TableColumn fx:id="codigo" prefWidth="75.0" text="Codigo" />
+          <TableColumn fx:id="nombre" prefWidth="134.0" text="Nombre" />
+            <TableColumn fx:id="apellido" prefWidth="171.0" text="Edad" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtBuscar" layoutX="14.0" layoutY="26.0" promptText="Buscar..." />
+      <JFXButton layoutX="349.0" layoutY="305.0" text="&gt;&gt;" />
+      <JFXToggleButton fx:id="toggleMadre" layoutX="411.0" layoutY="201.0" text="Madre" />
+      <JFXToggleButton fx:id="toggleDependencias" layoutX="534.0" layoutY="201.0" text="Dependencias" />
+      <JFXTextField fx:id="txtCodigoParent" disable="true" layoutX="423.0" layoutY="56.0" />
+      <JFXTextField fx:id="txtNombreParent" editable="false" layoutX="423.0" layoutY="89.0" prefHeight="23.0" prefWidth="155.0" />
+      <JFXTextField fx:id="txtDependencia" layoutX="588.0" layoutY="135.0" promptText="Tipo de Dependencia" />
+      <JFXToggleButton fx:id="toggleVive" layoutX="411.0" layoutY="248.0" text="Vive" />
+      <JFXTextField fx:id="txtDescripcion" layoutX="423.0" layoutY="135.0" promptText="Descripcion" />
+      <JFXButton fx:id="btnGuardar" buttonType="RAISED" defaultButton="true" layoutX="510.0" layoutY="362.0" onAction="#btnGuardarPadre" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: limegreen;" text="Guardar">
+         <font>
+            <Font size="22.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtApellido" editable="false" layoutX="588.0" layoutY="89.0" />
+      <JFXToggleButton fx:id="toggleAlfabeta" layoutX="537.0" layoutY="248.0" text="Alfabeta(o)" />
+   </children>
+</AnchorPane>

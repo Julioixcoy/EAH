@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="701.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.Modify.RelationToPerson.ChangeFamilySonController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="14.0" prefHeight="334.0" prefWidth="411.0">
+         <children>
+            <TableView fx:id="table" layoutX="12.0" layoutY="41.0" prefHeight="279.0" prefWidth="385.0">
+               <columns>
+                  <TableColumn fx:id="codigo" prefWidth="107.0" text="Codigo" />
+                  <TableColumn fx:id="nombre" prefWidth="227.0" text="Nombre" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="428.0" layoutY="29.0" prefHeight="334.0" prefWidth="239.0">
+         <children>
+            <JFXTextField fx:id="txtCodigo" layoutX="14.0" layoutY="24.0" promptText="Codigo..." />
+            <JFXTextField fx:id="txtNombre" layoutX="14.0" layoutY="51.0" prefHeight="23.0" prefWidth="198.0" promptText="Nombre" />
+            <JFXTextField fx:id="txtApellido" layoutX="14.0" layoutY="86.0" prefHeight="23.0" prefWidth="198.0" promptText="Apellidos..." />
+            <JFXTextField fx:id="txtEdad" layoutX="14.0" layoutY="120.0" prefHeight="23.0" prefWidth="198.0" promptText="edad..." />
+            <JFXTextField fx:id="txtDireccion" layoutX="14.0" layoutY="157.0" prefHeight="23.0" prefWidth="198.0" promptText="Direccion..." />
+            <DatePicker fx:id="dateWasBorn" layoutX="14.0" layoutY="246.0" promptText="Fecha de Nacimiento" />
+            <JFXTextField fx:id="txtEtnia" layoutX="14.0" layoutY="202.0" prefHeight="23.0" prefWidth="198.0" promptText="Etnia..." />
+            <DatePicker fx:id="dateInit" layoutX="14.0" layoutY="295.0" promptText="Fecha de inicio" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="230.0" layoutY="456.0" onAction="#save" prefHeight="36.0" prefWidth="156.0" style="-fx-background-color: #da0944;" text="Guardar">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtDependency" layoutX="547.0" layoutY="398.0" promptText="dependencia" />
+      <JFXToggleButton fx:id="isAlfabeto" layoutX="518.0" layoutY="350.0" text="alfabeta(o)" />
+      <JFXToggleButton fx:id="isLive" layoutX="360.0" layoutY="350.0" text="Es Madre" />
+      <JFXToggleButton fx:id="isDependient" layoutX="199.0" layoutY="350.0" text="Es Huerfano" />
+      <JFXToggleButton fx:id="isStudent" layoutX="41.0" layoutY="347.0" text="Es Padre" />
+      <JFXToggleButton fx:id="dependencias" layoutX="360.0" layoutY="391.0" text="Dependencias" />
+   </children>
+</AnchorPane>

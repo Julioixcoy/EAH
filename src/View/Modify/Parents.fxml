@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.Modify.RelationToPerson.ModifyParentsController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="376.0" prefWidth="316.0">
+         <children>
+            <TableView fx:id="table" layoutX="7.0" layoutY="63.0" prefHeight="299.0" prefWidth="298.0">
+              <columns>
+                <TableColumn fx:id="codigo" prefWidth="108.0" text="Codigo" />
+                <TableColumn fx:id="nombre" prefWidth="189.0" text="Nombre" />
+              </columns>
+            </TableView>
+            <JFXTextField fx:id="txtBuscar" layoutX="7.0" layoutY="26.0" prefHeight="23.0" prefWidth="208.0" promptText="Buscar..." />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="341.0" layoutY="17.0" prefHeight="367.0" prefWidth="284.0">
+         <children>
+            <JFXToggleButton fx:id="toggleLive" layoutX="22.0" layoutY="14.0" text="Vive" />
+            <JFXToggleButton fx:id="toggleMom" layoutX="159.0" layoutY="14.0" text="Madre" />
+            <JFXToggleButton fx:id="toggleDependency" layoutX="22.0" layoutY="72.0" text="Dependencias" />
+            <JFXToggleButton fx:id="toggleAlpha" layoutX="159.0" layoutY="72.0" text="alfabeto(a)" />
+            <JFXTextField fx:id="txtTypeDenpendency" layoutX="61.0" layoutY="150.0" promptText="Tipo de Dependencia" />
+            <JFXButton fx:id="btnGuardar" buttonType="RAISED" layoutX="62.0" layoutY="294.0" onAction="#save" prefHeight="34.0" prefWidth="194.0" style="-fx-background-color: #ffaf04;" text="Guardar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

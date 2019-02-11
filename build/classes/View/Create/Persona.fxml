@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import validate.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="517.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Create.RelationToPerson.PersonaController">
+   <children>
+      <Pane layoutX="24.0" layoutY="14.0" prefHeight="333.0" prefWidth="220.0">
+            <children>
+            <JFXTextField fx:id="txtCod" layoutX="19.0" layoutY="37.0" promptText="Codigo*..." />
+            <JFXTextField fx:id="txtName" layoutX="19.0" layoutY="80.0" promptText="Nombre*..." />
+            <JFXTextField fx:id="txtApellidos" layoutX="14.0" layoutY="134.0" promptText="Apellidos*..." />
+            <ValidateJFXNumber fx:id="txtAge" layoutX="19.0" layoutY="181.0" promptText="Edad*..." />
+            <JFXTextField fx:id="txtEtnia" layoutX="19.0" layoutY="231.0" promptText="Etnia..." />
+            <DatePicker fx:id="dateWasBorn" layoutX="12.0" layoutY="287.0" prefHeight="25.0" prefWidth="196.0" promptText="Fecha de Nacimiento*..." />
+            <Label layoutX="12.0" layoutY="7.0" prefHeight="15.0" prefWidth="196.0" text="Datos Personales" />
+            
+         </children>
+      </Pane>
+      <Pane layoutX="271.0" layoutY="14.0" prefHeight="348.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="6.0" layoutY="7.0" prefHeight="15.0" prefWidth="181.0" text="Contacto" />
+            <JFXTextField fx:id="txtDireccion" layoutX="19.0" layoutY="35.0" promptText="Direccion*..." />
+            <JFXTextField fx:id="txtTelefono" layoutX="19.0" layoutY="89.0" promptText="Telefono*..." />
+            <JFXToggleButton fx:id="btnToggle" layoutX="11.0" layoutY="150.0" text="Padre de Familia" toggleColor="#041e1c" toggleLineColor="#2ae8d5" unToggleColor="WHITE" />
+            <JFXToggleButton fx:id="isStudent" layoutX="19.0" layoutY="216.0" text="Estudiante" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnSaveAll" buttonType="RAISED" layoutX="169.0" layoutY="373.0" onAction="#btnSaveAll" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #87CEEB;" text="Guardar Todo" />
+      <Label fx:id="labelField" layoutX="150.0" layoutY="423.0" prefHeight="15.0" prefWidth="257.0" text="*Todos Los campos Son Obligatorios" textFill="#e41010" />
+   </children>
+</AnchorPane>

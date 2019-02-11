@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="219.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VerticalBox.VBoxSettingsController">
+   <children>
+      <JFXButton fx:id="btnRealUser" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#ShowUserInfoNow" prefHeight="51.0" prefWidth="215.0" style="-fx-background-color: #f1f1f1;" text="Usuario Actual" textAlignment="CENTER">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/User-blue-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnManageUsers" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#showManageUsers" prefHeight="51.0" prefWidth="213.0" style="-fx-background-color: #f1f1f1;" text="Admon. de Usuarios" textAlignment="RIGHT">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/maintenance-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnConfigDocuments" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT"  prefHeight="51.0" prefWidth="216.0" style="-fx-background-color: #f1f1f1;" text="Config. Documentos" textAlignment="RIGHT">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Document-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnTools" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" prefHeight="51.0" prefWidth="215.0" style="-fx-background-color: #f1f1f1;" text="Herramientas" textAlignment="RIGHT">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/tool-box-preferences-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnPreferenceSystem" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#ShowPreferenceSystem" prefHeight="51.0" prefWidth="217.0" style="-fx-background-color: #f1f1f1;" text="Pref. del sistema" textAlignment="RIGHT">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Apps-preferences-system-windows-actions-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnSupport" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #f1f1f1;" text="Asistencia Tecnica" textAlignment="RIGHT">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/customer-service-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnLogOut" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#logoutSystem" prefHeight="51.0" prefWidth="214.0" style="-fx-background-color: #f1f1f1;" text="Logout" textAlignment="RIGHT">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/logout-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

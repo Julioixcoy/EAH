@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VerticalBox.VBoxUpdateController">
+   <children>
+      <JFXButton fx:id="btnPersonas" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#SelectOption" prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #f1f1f1;" text="Personas" textAlignment="RIGHT">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/User-blue-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnPadres" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#SelectOption" prefHeight="51.0" prefWidth="254.0" style="-fx-background-color: #f1f1f1;" text="Padres" textAlignment="RIGHT">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/User-Files-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnStudiantes" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#SelectOption" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: #f1f1f1;" text="Estudiantes" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Actions-contact-new-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnFamilia" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#SelectOption" prefHeight="51.0" prefWidth="245.0" style="-fx-background-color: #f1f1f1;" text="Familia" textAlignment="RIGHT">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/family-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUsuario" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#SelectOption" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: #f1f1f1;" text="          Usuarios" textAlignment="RIGHT">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/customer-service-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

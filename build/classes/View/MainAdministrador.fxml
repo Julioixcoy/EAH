@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainAdministradorController">
+   <top>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="728.0" style="-fx-background-color: #2E8B57;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXHamburger fx:id="hamburger" prefHeight="100.0" prefWidth="87.0" />
+            <JFXButton fx:id="btncatalog" onAction="#selectOption" prefHeight="58.0" prefWidth="148.0" text="Ingresar" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Recursos/catalog-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Apple SD Gothic Neo Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnoperation" onAction="#selectOption" prefHeight="58.0" prefWidth="145.0" text="Operaciones" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Recursos/wheels-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnmanage" onAction="#selectOption" prefHeight="58.0" prefWidth="162.0" text="Actualizar" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Recursos/File-History-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnsettings" onAction="#selectOption" prefHeight="58.0" prefWidth="166.0" text="Configuracion" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Recursos/Actions-configure-toolbars-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Apple SD Gothic Neo Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <JFXDrawer fx:id="drawer" prefHeight="464.0" prefWidth="108.0" resizableOnDrag="true" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <StackPane fx:id="ResumePanel" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

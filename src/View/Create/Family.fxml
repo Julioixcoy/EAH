@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Create.RelationToPerson.FamilyController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="327.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Padres">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableParent" layoutX="4.0" layoutY="64.0" prefHeight="255.0" prefWidth="320.0">
+                          <columns>
+                            <TableColumn fx:id="codigoPadreTab" prefWidth="75.0" text="Codigo" />
+                            <TableColumn fx:id="nombrePadreTab" prefWidth="125.0" text="Nombre" />
+                              <TableColumn fx:id="apellidoPadreTab" prefWidth="119.0" text="Apellido" />
+                          </columns>
+                        </TableView>
+                        <JFXTextField fx:id="btnBuscarPadres" layoutX="14.0" layoutY="26.0" prefHeight="23.0" prefWidth="212.0" promptText="Buscar..." />
+                        <JFXButton fx:id="btnAddPadre" layoutX="113.0" layoutY="328.0" text="&gt;&gt;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Hijos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="btnBuscarHijos" layoutX="14.0" layoutY="30.0" prefHeight="23.0" prefWidth="262.0" promptText="Buscar..." />
+                        <TableView fx:id="tableSon" layoutY="66.0" prefHeight="235.0" prefWidth="327.0">
+                          <columns>
+                            <TableColumn fx:id="codigoHijoTab" prefWidth="75.0" text="Codigo" />
+                            <TableColumn fx:id="nombreHijoTab" prefWidth="135.0" text="Nombre" />
+                              <TableColumn fx:id="apellidoHijoTab" prefWidth="113.0" text="Apellido" />
+                          </columns>
+                        </TableView>
+                        <JFXButton fx:id="btnAddHijo" layoutX="125.0" layoutY="328.0" text="&gt;&gt;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label fx:id="lblCodigoMadre" layoutX="383.0" layoutY="18.0" prefHeight="23.0" prefWidth="95.0" />
+      <Label fx:id="lblCodigoPadre" layoutX="383.0" layoutY="59.0" prefHeight="23.0" prefWidth="95.0" />
+      <Label fx:id="lblMadre" layoutX="530.0" layoutY="14.0" prefHeight="30.0" prefWidth="165.0" />
+      <Label fx:id="lblPadre" layoutX="525.0" layoutY="55.0" prefHeight="30.0" prefWidth="165.0" />
+      <TableView fx:id="tableHijosFamilia" layoutX="372.0" layoutY="113.0" prefHeight="255.0" prefWidth="394.0">
+        <columns>
+          <TableColumn fx:id="hijosCodigo" prefWidth="134.0" text="Codigo" />
+          <TableColumn fx:id="nombresHijos" prefWidth="259.0" text="Nombre" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnGuardar" buttonType="RAISED" layoutX="555.0" layoutY="388.0" onAction="#save" prefHeight="37.0" prefWidth="157.0" style="-fx-background-color: Red;" text="Guardar" />
+      <JFXToggleButton fx:id="momExist" layoutX="792.0" layoutY="12.0" text="Madre Vive" />
+      <JFXToggleButton fx:id="dadExist" layoutX="794.0" layoutY="56.0" text="Padre Vive" />
+      <JFXTextArea fx:id="description" layoutX="801.0" layoutY="138.0" prefHeight="152.0" prefWidth="194.0" promptText="Descripcion..." />
+   </children>
+</AnchorPane>

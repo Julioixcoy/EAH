@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageUsersPropertiesController">
+   <children>
+      <Label layoutX="207.0" layoutY="32.0" text="Seleccione un usuario">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="23.0" />
+         </font>
+      </Label>
+      <Line endX="184.0" layoutX="229.0" layoutY="240.0" rotate="90.0" startX="-248.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <JFXComboBox fx:id="ComboBoxUsuario" layoutX="213.0" layoutY="77.0" prefHeight="27.0" prefWidth="202.0" />
+      <Label layoutX="212.0" layoutY="125.0" text="Caracteristicas:">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="23.0" />
+         </font>
+      </Label>
+      <JFXTabPane layoutX="214.0" layoutY="164.0" prefHeight="266.0" prefWidth="582.0">
+         <tabs>
+            <Tab fx:id="TablResume" text="Resumen">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewResumeConfig" layoutX="46.0" layoutY="18.0" prefHeight="200.0" prefWidth="490.0">
+                          <columns>
+                            <TableColumn fx:id="colModulo" prefWidth="241.0" text="Modulo" />
+                            <TableColumn fx:id="colItem" prefWidth="248.0" text="Item" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="TabIngresar" text="Ingresar">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXToggleButton fx:id="ToggleEnableProducts" layoutX="14.0" layoutY="14.0" onAction="#SelectedToggle" text="Personas" />
+                        <JFXToggleButton fx:id="ToggleEnableProviders" layoutX="14.0" layoutY="72.0" onAction="#SelectedToggle" text="Padres" />
+                        <JFXToggleButton fx:id="ToggleEnableCustomers" layoutX="20.0" layoutY="130.0" onAction="#SelectedToggle" prefHeight="58.0" prefWidth="122.0" text="Estudiantes" />
+                        <JFXToggleButton fx:id="ToggleCashAccouting" layoutX="224.0" layoutY="14.0" onAction="#SelectedToggle" text="Familia" />
+                        <JFXToggleButton fx:id="ToggleEnableBanks" layoutX="224.0" layoutY="72.0" onAction="#SelectedToggle" text="Usuarios" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="TabOperation" text="Operaciones">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXToggleButton fx:id="ToggleEnableOrdersPurchase" layoutX="50.0" layoutY="24.0" onAction="#SelectedToggle" text="Financieras" />
+                        <JFXToggleButton fx:id="ToggleEnableConcilation" layoutX="50.0" layoutY="82.0" onAction="#SelectedToggle" prefHeight="58.0" prefWidth="165.0" text="Medicas" />
+                        <JFXToggleButton fx:id="ToggleEnablePurchase" layoutX="56.0" layoutY="140.0" onAction="#SelectedToggle" text="Emocionales" />
+                        <JFXToggleButton fx:id="ToggleEnableSales" layoutX="291.0" layoutY="24.0" onAction="#SelectedToggle" text="Ventas" />
+                        <JFXToggleButton fx:id="ToggleEnableEnterProduct" layoutX="291.0" layoutY="82.0" onAction="#SelectedToggle" text="Estudiantes" />
+                        <JFXToggleButton fx:id="ToggleEnableTransfers" layoutX="291.0" layoutY="140.0" onAction="#SelectedToggle" text="Reportes" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="TabAdministration" text="Actualizar">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXToggleButton fx:id="ToggleEnableManageCostumers" layoutX="43.0" layoutY="24.0" onAction="#SelectedToggle" text="Personas" />
+                        <JFXToggleButton fx:id="ToggleEnableManageProvider" layoutX="43.0" layoutY="82.0" onAction="#SelectedToggle" text="Padres" />
+                        <JFXToggleButton fx:id="ToggleEnableMoveCash" layoutX="43.0" layoutY="140.0" onAction="#SelectedToggle" text="Estudiantes" />
+                        <JFXToggleButton fx:id="EnableReports" layoutX="367.0" layoutY="24.0" onAction="#SelectedToggle" text="Familia" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="TabConfiguration" text="Configuracion">
+              <content>
+                <AnchorPane fx:id="ToggleEnableRealUser" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXToggleButton fx:id="ToggleUserReal" layoutX="21.0" layoutY="14.0" onAction="#SelectedToggle" text="Usuario Actual" />
+                        <JFXToggleButton fx:id="ToggleEnableManageUsers" layoutX="24.0" layoutY="72.0" onAction="#SelectedToggle" text="Administracion De Usuarios" />
+                        <JFXToggleButton fx:id="ToggleEnableDocuments" layoutX="341.0" layoutY="14.0" onAction="#SelectedToggle" text="Documentos" />
+                        <JFXToggleButton fx:id="ToggleEnableToos" layoutX="341.0" layoutY="72.0" onAction="#SelectedToggle" text="Herramientas" />
+                        <JFXToggleButton fx:id="ToggleEnablePreferenceSystem" layoutX="24.0" layoutY="130.0" onAction="#SelectedToggle" text="Preferencia Del Sistema" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <JFXButton fx:id="btnSaveConfigPreferenceUser" buttonType="RAISED" layoutX="14.0" layoutY="79.0" onAction="#SaveConfiguration" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #339933;" text="Guardar Configuracion" textFill="WHITE">
+         <font>
+            <Font name="Apple SD Gothic Neo Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

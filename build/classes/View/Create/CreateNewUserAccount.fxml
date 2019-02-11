@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Create.RelationToPerson.CreateNewUserAccountController">
+   <children>
+      <Label fx:id="LabelTitleForm" layoutX="140.0" layoutY="62.0" text="Nueva Cuenta De Usuario">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="220.0" text="Nombre De Usuario:" />
+      <Label layoutX="113.0" layoutY="265.0" text="Password:" />
+      <Label layoutX="25.0" layoutY="310.0" text="Re ingrese su Password:" />
+      <ImageView fitHeight="85.0" fitWidth="91.0" layoutX="422.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Recursos/User-blue-icon.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="TxtNameUser" layoutX="191.0" layoutY="216.0" prefHeight="25.0" prefWidth="229.0" promptText="Ej. JFer97" />
+      <JFXPasswordField fx:id="TxtPassword1" layoutX="191.0" layoutY="261.0" prefHeight="25.0" prefWidth="229.0" />
+      <JFXPasswordField fx:id="TxtPassword2" layoutX="191.0" layoutY="306.0" prefHeight="25.0" prefWidth="229.0" />
+      <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="143.0" layoutY="396.0" onAction="#CloseWindow" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #FF3300;" text="Cancelar" textFill="WHITE" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="294.0" layoutY="396.0" onAction="#SaveUser" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #33CC66;" text="Aceptar" textFill="WHITE" />
+      <JFXComboBox fx:id="comboPersona" editable="true" layoutX="180.0" layoutY="160.0" prefHeight="27.0" prefWidth="229.0" promptText="Persona" />
+      <Label layoutX="103.0" layoutY="137.0" prefHeight="20.0" prefWidth="270.0" text="Seleccione Persona ">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="350.0" text="Tipo De Cuenta:" />
+      <JFXComboBox fx:id="ComboTypeUser" layoutX="191.0" layoutY="345.0" prefHeight="27.0" prefWidth="229.0" />
+      <JFXButton fx:id="AddTypeAccount" buttonType="RAISED" layoutX="435.0" layoutY="336.0" onAction="#showNewTypeAccount" prefHeight="36.0" prefWidth="48.0" style="-fx-background-color: Skyblue;" text="+" />
+   </children>
+</AnchorPane>

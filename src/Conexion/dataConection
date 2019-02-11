@@ -1,0 +1,4 @@
+ip:, localhost:3306
+database:, mydb
+user:, root
+pass:, password

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Modify.RelationToPerson.ModifyFamilyController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="11.0" prefHeight="440.0" prefWidth="494.0">
+         <children>
+            <TableView fx:id="tableParents" layoutX="9.0" layoutY="104.0" prefHeight="200.0" prefWidth="477.0">
+              <columns>
+                <TableColumn fx:id="codigoMadre" prefWidth="75.0" text="Codigo" />
+                <TableColumn fx:id="madre" prefWidth="153.0" text="Madre" />
+                  <TableColumn fx:id="codigoPadre" prefWidth="83.0" text="Codigo" />
+                  <TableColumn fx:id="padre" prefWidth="165.0" text="Padre" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="btnModifyParents" buttonType="RAISED" layoutX="113.0" layoutY="316.0" onAction="#modifyParents" prefHeight="36.0" prefWidth="183.0" style="-fx-background-color: #3ddd32;" text="Modificar Padres" />
+            <JFXTextField fx:id="txtBuscar" layoutX="9.0" layoutY="32.0" prefHeight="23.0" prefWidth="294.0" promptText="buscar..." />
+            <JFXTextField fx:id="txtCodFamiliar" layoutX="226.0" layoutY="66.0" promptText="codigo Familiar" />
+            <JFXToggleButton fx:id="toggleMomLive" layoutX="23.0" layoutY="368.0" text="Madre Vive" />
+            <JFXToggleButton fx:id="toggleDadLive" layoutX="296.0" layoutY="368.0" text="PadreVive" />
+            <JFXTextField layoutX="46.0" layoutY="429.0" prefHeight="23.0" prefWidth="348.0" promptText="Descripcion" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="508.0" layoutY="14.0" prefHeight="434.0" prefWidth="317.0">
+         <children>
+            <TableView fx:id="tableSon" layoutX="12.0" layoutY="96.0" prefHeight="200.0" prefWidth="294.0">
+              <columns>
+                <TableColumn fx:id="codigoHijo" prefWidth="95.0" text="Codigo" />
+                <TableColumn fx:id="nombreHijo" prefWidth="198.0" text="Nombre" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="modifyHijo" buttonType="RAISED" layoutX="96.0" layoutY="303.0" onAction="#modifyHijo" prefHeight="36.0" prefWidth="127.0" style="-fx-background-color: #23b3d3;" text="Modificar Hijos" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="377.0" layoutY="474.0" onAction="#saveAll" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: #e064e7;" text="Guardar" />
+   </children>
+</AnchorPane>

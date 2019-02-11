@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="254.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VerticalBox.VBoxOperationsController">
+   <children>
+      <JFXButton fx:id="btnFinancieras" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#SelectOption" prefHeight="51.0" prefWidth="277.0" ripplerFill="BLACK" style="-fx-background-color: #f1f1f1;" text="Financieras" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Manager-Suit-Black-Tie-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnMedicas" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#SelectOption" prefHeight="51.0" prefWidth="282.0" ripplerFill="BLACK" style="-fx-background-color: #f1f1f1;" text="Medicas" textAlignment="RIGHT">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Actions-user-group-new-icon-2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnEmocionales" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#SelectOption" prefHeight="51.0" prefWidth="275.0" ripplerFill="BLACK" style="-fx-background-color: #f1f1f1;" text="Emocionales" textAlignment="RIGHT">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/User-Files-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnEstudiantes" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#SelectOption" prefHeight="51.0" prefWidth="281.0" ripplerFill="BLACK" style="-fx-background-color: #f1f1f1;" text="Estudiantes" textAlignment="RIGHT">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/User-blue-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnReports" alignment="TOP_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#SelectOption" prefHeight="51.0" prefWidth="281.0" ripplerFill="BLACK" style="-fx-background-color: #f1f1f1;" text="Reportes" textAlignment="RIGHT">
+         <font>
+            <Font name="Apple SD Gothic Neo UltraLight" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Reports-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>
